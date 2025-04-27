@@ -4,14 +4,16 @@
     <meta charset="UTF-8">
     <title>ParkWise - View Reservation</title>
     <link rel="stylesheet" href="style.css">
-    <script src="qrcode.min.js"></script>
     <script src="script.js" defer></script>
 </head>
 <body onload="loadReservation()">
     <div class="container">
         <h1>Your Reservation</h1>
         <p id="savedReservation"></p>
-        <div id="savedQR"></div>
+
+        <h2>Show this QR Code at the entrance:</h2>
+        <img src="images/fake_qrcode.png" alt="Your Reservation QR Code" width="200">
+
         <button onclick="window.location.href='index.html'">Home</button>
     </div>
 </body>
